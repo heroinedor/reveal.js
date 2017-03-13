@@ -19,6 +19,7 @@
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/simplon.css">
 
     <!-- Printing and PDF exports -->
     <script>
@@ -28,6 +29,7 @@
         link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
         document.getElementsByTagName('head')[0].appendChild(link);
     </script>
+
 </head>
 <body>
 <div class="reveal">
@@ -45,18 +47,18 @@
             <p>Freelance avec 15 ans d'XP</p>
             <ul>
                 <li>JEE</li>
-                <li>industrialisation des développements</li>
-                <li>développement fullstack</li>
+                <li>industrialisation des développements tendance DevOps</li>
+                <li>développement fullstack (un peu)</li>
             </ul>
             <p style="text-align: center">
-            <div><img
+            <div class="logo"><img
                     alt="Pipo Bimbo blog" src="img/Karamazov.png" style="max-width: 5%;"></div>
             <div>
                 <small><a href="http://www.pipobimbo.info/blog/">Pipo Bimbo Info</a></small>
             </div>
             </p>
             <p>
-            <div><img
+            <div class="logo"><img
                     alt="Pipo Bimbo twitter" src="img/Twitter_Logo_Blue.png" style="max-width: 5%;"></div>
             <div>
                 <small><a href="http://twitter.com/heroinedor">@heroinedor</a></small>
@@ -64,8 +66,8 @@
 
             </p>
             <p>
-                <div><img
-                alt="Pipo Bimbo github" src="img/GitHub-Mark-32px.png" style="max-width: 5%;"></div>
+                <div class="logo"><img
+                alt="Pipo Bimbo github" src="img/GitHub-Mark-32px.png" style="max-width: 40%;"></div>
                 <div></div>
                 <small><a href="https://github.com/heroinedor">heroinedor</a></small>
             </p>
@@ -78,8 +80,11 @@
         <section>
             <h3>Parcours</h3>
             <p>Pas de diplôme en informatique</p>
-            <p>Tombé dans l'informatique via les jeux (Quake)</p>
-            <p>Formation professionnelle au début et Auto-formation continue depuis</p>
+            <p>Tombé dans l'informatique via les jeux <span class="logo"><img alt="Quake" src="img/quake.jpeg" style="max-width: 5%;"></span></p>
+            <p>Formation professionnelle au début</p>
+            <p>Auto-formation continue depuis</p>
+            <p>Syndrôme de l'imposteur</p>
+            <p class="fragment fade-up">Pas de diplôme en web-design non plus</p>
             <aside class="notes">
                 <p>Ne jamais s'endormir sur ses acquis</p>
                 <p>On a toujours le syndrôme de l'imposteur, quelque soit l'âge et l'expérience car il y a toujours
@@ -97,14 +102,30 @@
                     quelqu'un de plus compétent</p>
             </aside>
         </section>
+        <!-- Sections de présentation du cours -->
         <section>
             <h2>But de ce cours/TP</h2>
-        </section>
-        <!-- Section problèmes rencontrés et solutions apportées (1 fond de couleur par thématique)-->
-        <section>historiquement, on a d'abord créé plein d'outils pour résoudre des problèmes disparates</section>
+            <p class="fragment fade-up">Comprendre l'utilité de l'industrialisation des développements</p>
+            <p class="fragment fade-up">Comprendre le rôle des briques d'une Chaîne d'Intégration Continue</p>
+            <p class="fragment fade-up">Appréhender un cas réaliste de développement</p>
+         </section>
         <section>
-            <h2>Les galères du développeur en entreprise</h2>
-            <h3>Et les outils qui aident</h3>
+            <h2>Ce que vous y verrez</h2>
+            <p>Pour chaque étape de l'industrialisation</p>
+            <p class="fragment fade-up">Un exemple de problème rencontré en situation réelle</p>
+            <p class="fragment fade-up">Un exercice pour résoudre le problème</p>
+            <p class="fragment fade-up">Une synthèse sur la solution mise en oeuvre</p>
+            <p class="fragment fade-up">Des boulettes et des fautes de frappes</p>
+        </section>
+        <section>
+            <h2>Ce que vous n'y verrez pas</h2>
+            <p class="fragment fade-up">Une étude exhaustive de chaque brique d'IC</p>
+            <p class="fragment fade-up">La liste de tous les outils existant</p>
+            <p class="fragment fade-up"> Des licornes<br><img src="img/licorne.jpeg" style="max-width: 20%;"></p>
+        </section>
+        <!-- Section des exercices-->
+        <section>
+            <h2>Industrialisation des développements pas à pas</h2>
         </section>
         <section>
             <h3>Installation du projet sur le poste</h3>
