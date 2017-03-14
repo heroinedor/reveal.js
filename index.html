@@ -177,7 +177,7 @@
         </section>
         <section>
             <h3>Step 2 : ajout d'un gestionnaire de configuration (Git)</h3>
-            <p >Problème rencontré : Comment préparer un travail en équipe à plusieurs personnes sur les même fichiers ?</p>
+            <p >Problèmatique : Comment préparer un travail en équipe à plusieurs personnes sur les même fichiers ?</p>
             <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-2-:-ajout-d'un-gestionnaire-de-configuration-(Git)">Rendez-vous au Step 2</a></p>
             <p>Solution : gestionnaire de configuration qui permet : </p>
             <ul>
@@ -200,7 +200,7 @@
         </section>
         <section>
             <h3>Step 3 : configuration d'un gestionnaire de dépôt privé (Sinopia)</h3>
-            <p >Problème rencontré : Où stocker les dépendances utilisées et celles livrées ?</p>
+            <p >Problèmatique : Où stocker les dépendances utilisées et celles livrées ?</p>
             <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-3-:-configuration-d'un-gestionnaire-de-d%C3%A9p%C3%B4t-priv%C3%A9-(Sinopia)">Rendez-vous au Step 3</a></p>
             <p>Solution : gestionnaire de dépôt privé qui permet : </p>
             <ul>
@@ -215,6 +215,7 @@
                     <li>Méthode Lib dans les gestions de conf : pas une bonne pratique car rend les projets obèses et pose des problèmes lors des montées de version.</li>
                     <li>Partager les libs sur un même lecteur réseau est peu pratique car on peut supprimer une lib partagée par erreur et c’est pas pratique quand on doit en rajouter une nouvelle.</li>
                 </ul>
+                <p>Attention : Sinopia utilisé uniquement à but pédagogique. Solution en fin de vie</p>
                 <p>Diverses solutions en fonction des langages</p>
                <ul>
                     <li>Java: Nexus, Artifactory, JFrog …</li>
@@ -222,14 +223,78 @@
                 </ul>
             </aside>
         </section>
-
+        <section>
+            <h3>Step 4 : tests automatiques unitaires et end to end</h3>
+            <p >Problèmatique : comment tester rapidement son code, de manière exhaustive ?</p>
+            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-4-:-ajout-de-tests-automatiques-unitaires-(Jest)-et-end-to-end-(Protractor)">Rendez-vous au Step 4</a></p>
+            <p>Solution : automatisation des tests unitaires et e2e </p>
+            <ul>
+                <li class="fragment fade-up">augmente la qualité du livrable</li>
+                <li class="fragment fade-up">sécurise les livraisons</li>
+                <li class="fragment fade-up">attention à la maintenance des tests !</li>
+            </ul>
+            <aside class="notes">
+                <p>Temps imparti : 30 min car assez long</p>
+                <p>Les tests unitaires doivent rentrer dans les bonnes pratiques car permettent de détecter les erreurs rapidement</p>
+                <p>Les tests e2e sont la plupart du temps négligés alors qu'ils sont les meilleurs en terme ROI</p>
+                <p>Attention à la mauvaise pratique du skip des tests</p>
+                <p>Beaucoup de types de tests différents, plus ou moins automatisables.</p>
+                <p>Énormément de produits disponibles en fonction du langage et des technos utilisées : </p>
+                <ul>
+                    <li>Tests unitaires avec tous les XUnit : JUnit, JSUnit, PHPUnit, etc.</li>
+                    <li>Tests d’intégration : TestNG, Mockito, Arquilian, Selenium, etc.</li>
+                    <li>Tests fonctionnels/ d’Interface / e2e ?? : Selenium, QuickTestPro, Fitnesse, protractor ?</li>
+                    <li>Tests de charge : JMeter, neoload, gatling, …</li>
+                </ul>
+                <p>=> Le sujet des tests pourrait faire l’objet d’une présentation à lui tout seul.</p>
+            </aside>
+        </section>
+        <section>
+            <h3>Step 5 : Qualité de code</h3>
+            <p >Problèmatique : mesurer et contrôler la qualité du code</p>
+            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-5-:-configuration-d'un-outil-de-contr%C3%B4le-de-la-qualit%C3%A9-de-code-(Eslint)">Rendez-vous au Step 5</a></p>
+            <p>Solution : contrôle automatique du code et reporting</p>
+            <ul>
+                <li class="fragment fade-up">évaluation quantitative de la dette technique</li>
+                <li class="fragment fade-up">couverture de code par les tests</li>
+                <li class="fragment fade-up">anticiper les problèmes (NPE, undefined, ...)</li>
+            </ul>
+            <aside class="notes">
+                <p>Temps imparti : 5-10 min max</p>
+                <p>par manque de temps, pas mis en place Istanbul</p>
+                <p>Compatibilité de JavaScript avec SonarCube ?</p>
+                <p>Peut donner lieu à des dérives et du flicage</p>
+                <p>Énormément de produits disponibles en fonction du langage et des but recherchés : </p>
+                <ul>
+                    <li>JavaScript : ESLint, TSLint, Istanbul, …..</li>
+                    <li>Java : Sonar, PMD, FindBug, etc....</li>
+                </ul>
+                <p>=> Le sujet de la qualité du code pourrait faire l’objet d’une présentation à lui tout seul.</p>
+            </aside>
+        </section>
+        <section>
+            <h3>Step 6 : Chaîne d'Intégration Continue (TravisCI)</h3>
+            <p >Problèmatique : Accélerer et systématiser les tâches précédentes</p>
+            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-5-:-configuration-d'un-outil-de-contr%C3%B4le-de-la-qualit%C3%A9-de-code-(Eslint)">Rendez-vous au Step 5</a></p>
+            <p>Solution : Chaîne d'Intégration Continue</p>
+            <ul>
+                <li class="fragment fade-up">éviter le syndrôme du "ça marchait sur mon poste"</li>
+                <li class="fragment fade-up">détecter les erreurs à chaque push</li>
+                <li class="fragment fade-up">gain de temps en développement</li>
+            </ul>
+            <aside class="notes">
+                <p>Temps imparti : 10-20 min car peut être long</p>
+                <p>Dans notre cas, un seul environnement, mais plusieurs en entreprise</p>
+                <p>Solutions dépendent du langage utilisé et de la politique d’entreprise choisie : </p>
+                <ul>
+                    <li>Internes à l’entreprise (installation sur un serveur à part entière) : Jenkins, Team Foundation Server, GitLabCI … </li>
+                    <li>Externalisé : TravisCI, Atlassian Bamboo, ...</li>
+                </ul>
+                <p>=> Le sujet de la qualité du code pourrait faire l’objet d’une présentation à lui tout seul.</p>
+            </aside>
+        </section>
         <!-- Section architecture globale des solutions dans l'intégration continue-->
-        <section>gestion de conf</section>
-        <section>outils de build</section>
-        <section>serveurs d'intégration continue</section>
-        <section>qualimétire</section>
-        <section>test</section>
-        <section>gestionnaire de dépôt</section>
+
         <!-- Section Pertinence, avantages, inconvénients -->
         <section></section>
         <section></section>
@@ -242,8 +307,46 @@
             <p>Autre approche avec des outils Java</p>
             <p><a href="http://www.pipobimbo.info/blog/techno/integration-continue/" target="_blank">article intégration continue sur mon blog</a>  </p>
         </section>
-        <section><h2>Des questions ?</h2></section>
-
+        <section>
+            <h2>Pour aller plus loin ...</h2>
+            <div class="fragment fade-up">
+                <div>Livraison continue</div>
+                <div><ul>
+                    <li><a href="https://www.youtube.com/watch?v=ij1-MNcRBSQ" target="_blank">Jenkins, Docker Orchestrons le Continuous Delivery</a></li>
+                    <li><a href="https://zestedesavoir.com/articles/88/la-methode-continuous-delivery/
+" target="_blank">La méthode continuous delivery</a></li>
+                    </ul></div>
+            </div>
+            <aside class="notes">
+                <p>On teste les livrables déployés automatiquement sur tous les environnements</p>
+                <p>MAIS une dernière action manuelle pour passage en prod</p>
+                <p>réduit considérablement le time-to-market</p>
+            </aside>
+        </section>
+        <section>
+            <h2>Encore plus loin ...</h2>
+            <div class="fragment fade-up">
+                <div>Déploiement continu</div>
+                <div><ul>
+                    <li><a href="http://blog.octo.com/continuous-deployment" target="_blank">Continuous Deployment</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=jCwzf9adAtE" target="_blank">Intégration et déploiement en continu @ Github</a></li>
+                    </ul></div>
+            </div>
+            <aside class="notes">
+                <p>On teste les livrables déployés automatiquement sur tous les environnements</p>
+                <p>Même le passage en prod en prod est automatisé</p>
+                <p>Nécessite une énorme confiance dans sa chaîne d'IC et un saut psychologique</p>
+                <p>Permet beaucoup de souplesse et une approche 'always beta'</p>
+            </aside>
+        </section>
+        <section>
+            <h2>Des questions ?</h2>
+            <div class="fragment fade-up">
+                <div>Merci !</div>
+                <div><img src="img/deadpool-2-featured-image.jpg" style="max-width: 50%;"><br>
+                <p><small><small>Et elle est où ma licorne ?</small></small></p>
+            </div>
+        </section>
     </div>
 </div>
 
