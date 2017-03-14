@@ -47,7 +47,7 @@
             <p>Freelance avec 15 ans d'XP</p>
             <ul>
                 <li>JEE</li>
-                <li>industrialisation des développements tendance DevOps</li>
+                <li>industrialisation des développements / DevOps</li>
                 <li>développement fullstack (un peu)</li>
             </ul>
             <p style="text-align: center">
@@ -111,15 +111,17 @@
             <p class="fragment fade-up">Appréhender un cas réaliste de développement</p>
          </section>
         <section>
-            <h2>Ce que vous y verrez</h2>
-            <p>Pour chaque étape de l'industrialisation</p>
-            <p class="fragment fade-up">Un exemple de problème rencontré en situation réelle</p>
-            <p class="fragment fade-up">Un exercice pour résoudre le problème</p>
-            <p class="fragment fade-up">Une synthèse sur la solution mise en oeuvre</p>
-            <p class="fragment fade-up">Des boulettes et des fautes de frappes</p>
+            <h2>Ce que vous y trouverez</h2>
+            <p>Pour chaque étape de l'industrialisation : </p>
+            <ul>
+            <li class="fragment fade-up">Un exemple de problème rencontré en situation réelle</li>
+            <li class="fragment fade-up">Un exercice pour résoudre le problème</li>
+            <li class="fragment fade-up">Une synthèse sur la solution mise en oeuvre</li>
+            <li class="fragment fade-up">Des boulettes et des fautes de frappes</li>
+            </ul>
         </section>
         <section>
-            <h2>Ce que vous n'y verrez pas</h2>
+            <h2>Ce que vous n'y trouverez pas</h2>
             <p class="fragment fade-up">Une étude exhaustive de chaque brique d'IC</p>
             <p class="fragment fade-up">La liste de tous les outils existant</p>
             <p class="fragment fade-up"> Des licornes<br><img src="img/licorne.jpeg" style="max-width: 20%;"></p>
@@ -135,8 +137,8 @@
         </section>
         <section>
             <h3>Step 0 : Récupération des sources et installation en local</h3>
-            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-0-:-R%C3%A9cup%C3%A9ration-des-sources-et-installation-en-local">Rendez-vous au Step 0</a></a></p>
-            <p >Problèmes rencontrés</p>
+            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-0-:-R%C3%A9cup%C3%A9ration-des-sources-et-installation-en-local">Rendez-vous au Step 0</a></p>
+            <p >Problèmes rencontrés :</p>
             <ul>
                 <li class="fragment fade-up">lecture d'une doc technique fastidieuse et indigeste</li>
                 <li class="fragment fade-up">copie manuelle de librairies de code</li>
@@ -145,7 +147,7 @@
             </ul>
             <aside class="notes">
                 <p>Temps imparti : 5-10 min max</p>
-                <p>Rapide et simple dans notre cas car petit projet</p>
+                <p>Rapide et simple dans notre cas petit projet</p>
                 <p>Mais peut être beaucoup plus long sur des projets complexes : </p>
                 <ul>
                     <li>1 à 2 j dans certains cas</li>
@@ -155,9 +157,9 @@
             </aside>
         </section>
         <section>
-            <h3>Step 0</h3>
-            <p>Solution : automatisation de l'installation via un outil de build (Webpack)</p>
-            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-1-:-ajout-d'un-outil-de-build-(Webpack)">=> Rendez-vous au Step 1</a></a></p>
+            <h3>Step 1 : automatisation de l'installation via un outil de build (Webpack)</h3>
+            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-1-:-ajout-d'un-outil-de-build-(Webpack)">=> Rendez-vous au Step 1</a></p>
+            <p>Solution qui permet : </p>
             <ul>
                 <li class="fragment fade-up">installation en 1 seule commande</li>
                 <li class="fragment fade-up">évite la copie manuelle des dépendances</li>
@@ -173,9 +175,53 @@
                 </ul>
             </aside>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section>
+            <h3>Step 2 : ajout d'un gestionnaire de configuration (Git)</h3>
+            <p >Problème rencontré : Comment préparer un travail en équipe à plusieurs personnes sur les même fichiers ?</p>
+            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-2-:-ajout-d'un-gestionnaire-de-configuration-(Git)">Rendez-vous au Step 2</a></p>
+            <p>Solution : gestionnaire de configuration qui permet : </p>
+            <ul>
+                <li class="fragment fade-up">modification concurrente des fichiers + historisation</li>
+                <li class="fragment fade-up">fusion facilitée des fichiers (surtout Git)</li>
+                <li class="fragment fade-up">développement de feature dans des branches parallèles</li>
+            </ul>
+            <aside class="notes">
+                <p>Temps imparti : 5-10 min max</p>
+                <p>Il existe d'autres solutions que Git, mais moins pratiques</p>
+                <p>Ces solutions sont généralement agnostiques</p>
+                <p>Musée des dinausores</p>
+                <ul>
+                    <li>SVN</li>
+                    <li>Serena Dimension (à fuir)</li>
+                    <li>CVS, Starteam, Clearcase</li>
+                </ul>
+                <p> Signaler les modèles de branching type Git-flow</p>
+            </aside>
+        </section>
+        <section>
+            <h3>Step 3 : configuration d'un gestionnaire de dépôt privé (Sinopia)</h3>
+            <p >Problème rencontré : Où stocker les dépendances utilisées et celles livrées ?</p>
+            <p><a href="https://github.com/heroinedor/tictactoe/wiki/Step-3-:-configuration-d'un-gestionnaire-de-d%C3%A9p%C3%B4t-priv%C3%A9-(Sinopia)">Rendez-vous au Step 3</a></p>
+            <p>Solution : gestionnaire de dépôt privé qui permet : </p>
+            <ul>
+                <li class="fragment fade-up">soulager la connexion internet de l'entreprise</li>
+                <li class="fragment fade-up">stocker en interne les dépendances non publiques</li>
+                <li class="fragment fade-up">contrôler la qualité des dépendances</li>
+            </ul>
+            <aside class="notes">
+                <p>Temps imparti : 5-10 min max</p>
+                <p>Les méthodes manuelles (copie de fichier sur des serveurs partagés) rencontrent vite leurs limites</p>
+                <ul>
+                    <li>Méthode Lib dans les gestions de conf : pas une bonne pratique car rend les projets obèses et pose des problèmes lors des montées de version.</li>
+                    <li>Partager les libs sur un même lecteur réseau est peu pratique car on peut supprimer une lib partagée par erreur et c’est pas pratique quand on doit en rajouter une nouvelle.</li>
+                </ul>
+                <p>Diverses solutions en fonction des langages</p>
+               <ul>
+                    <li>Java: Nexus, Artifactory, JFrog …</li>
+                    <li>JavaScript : Sinopia, Nexus (NPM), private bower...</li>
+                </ul>
+            </aside>
+        </section>
 
         <!-- Section architecture globale des solutions dans l'intégration continue-->
         <section>gestion de conf</section>
@@ -188,9 +234,15 @@
         <section></section>
         <section></section>
         <!-- Section Conclusion / questions -->
-        <section>Conclusion : les sociétés l'ont déjà largement adoptées,</section>
-        <section>des questions ?</section>
-
+        <section>
+            <h2>Conclusion</h2>
+            <p>Industrialisation des développements adopté par beaucoup de sociétés</p>
+        </section>
+        <section>
+            <p>Autre approche avec des outils Java</p>
+            <p><a href="http://www.pipobimbo.info/blog/techno/integration-continue/" target="_blank">article intégration continue sur mon blog</a>  </p>
+        </section>
+        <section><h2>Des questions ?</h2></section>
 
     </div>
 </div>
