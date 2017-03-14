@@ -301,14 +301,32 @@
         <!-- Section Conclusion / questions -->
         <section>
             <h2>Conclusion</h2>
-            <p>Industrialisation des développements adopté par beaucoup de sociétés</p>
+            <p class="fragment fade-up">Modèle d'interconnexion d'outils</p>
+            <p class="fragment fade-up">Il existe des solutions clé en mains (GitLabCI, suite Atlassian, etc.)</p>
+            <p class="fragment fade-up">modèle de plus en plus adopté par beaucoup de sociétés</p>
         </section>
         <section>
-            <p>Autre approche avec des outils Java</p>
-            <p><a href="http://www.pipobimbo.info/blog/techno/integration-continue/" target="_blank">article intégration continue sur mon blog</a>  </p>
+            <h3>Pertinence</h3>
+            <p>Pertinent quand :</p>
+            <ul>
+                <li class="fragment fade-up">plusieurs membres dans l’équipe</li>
+                <li class="fragment fade-up">projet qui dure (plusieurs version)</li>
+                <li class="fragment fade-up">livraison sur plusieurs environnements différents</li>
+            </ul>
+            <p>Pas Pertinent quand :</p>
+            <ul>
+                <li class="fragment fade-up">1 seul développeur ou 2 max</li>
+                <li class="fragment fade-up">petit projet perso ou one-shot</li>
+                <li class="fragment fade-up">Proof Of Concept</li>
+            </ul>
         </section>
         <section>
             <h2>Pour aller plus loin ...</h2>
+            <p>Approche avec les outils du monde Java</p>
+            <p><a href="http://www.pipobimbo.info/blog/techno/integration-continue/" target="_blank">article intégration continue sur mon blog</a>  </p>
+        </section>
+        <section>
+            <h2>Encore plus loin ...</h2>
             <div class="fragment fade-up">
                 <div>Livraison continue</div>
                 <div><ul>
@@ -324,7 +342,7 @@
             </aside>
         </section>
         <section>
-            <h2>Encore plus loin ...</h2>
+            <h2>Vers l'infini et au delà !</h2>
             <div class="fragment fade-up">
                 <div>Déploiement continu</div>
                 <div><ul>
@@ -368,7 +386,19 @@
                 hljs.initHighlightingOnLoad();
             }
             }
-        ]
+        ],
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 960,
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.5
     });
 </script>
 </body>
